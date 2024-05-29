@@ -20,5 +20,4 @@ Multilingual Accessibility: The support for multiple languages ensures inclusivi
 Seamless Integration: The integration of ChatGPT's API facilitates seamless communication between the user and the AI model, enabling efficient query processing and response generation.
 Overall, the project demonstrates the effective utilization of web technologies and NLP techniques to develop a versatile voice assistant with enhanced multilingual capabilities, offering a personalized and accessible user experience.
 
-Live link: https://websitebuilder4u.in/voiceai/conf/
-https://websitebuilder4u.in/voiceai/
+

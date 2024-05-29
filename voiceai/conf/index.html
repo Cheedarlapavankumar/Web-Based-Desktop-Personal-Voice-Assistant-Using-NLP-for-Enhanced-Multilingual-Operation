@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Information</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="nice-font" id="h">Personal Information</h1>
+    </header>
+
+    <main class="nice-font">
+      <form id="personalInfoForm">
+        <div class="form-group">
+          <label for="language">Language:</label>
+          <select id="language">
+            <option value="en-US">English (US)</option>
+            <option value="ml-IN">Malayalam</option>
+            <option value="ta-IN">Tamil</option>
+            <option value="te-IN">Telugu</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-group">
+          <label>Gender:</label>
+          <div class="radio-group">
+            <div>
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                required
+              />
+              <label for="male">Male</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female"
+                required
+              />
+              <label for="female">Female</label>
+            </div>
+            <div>
+              <input
+                type="radio"
+                id="other"
+                name="gender"
+                value="other"
+                required
+              />
+              <label for="other">Other</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age:</label>
+          <input type="number" id="age" placeholder="Enter your age" required />
+        </div>
+
+        <div class="form-group">
+          <label for="about">About:</label>
+          <textarea
+            id="about"
+            placeholder="Tell us a little bit about yourself"
+          ></textarea>
+        </div>
+
+        <button type="submit" id="saveBtn" class="shadow nice-font">
+          Save
+        </button>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  user-select: none;
+  background-color: #4ec2ae;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#h {
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.shadow {
+  box-shadow:
+    0 3px 3px 0 rgb(0 0 0 / 14%),
+    0 1px 7px 0 rgb(0 0 0 / 12%),
+    0 3px 1px -1px rgb(0 0 0 / 20%);
+}
+
+.nice-font {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  margin-bottom: 50px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  outline: none;
+  box-shadow:
+    0 3px 3px 0 rgb(0 0 0 / 14%),
+    0 1px 7px 0 rgb(0 0 0 / 12%),
+    0 3px 1px -1px rgb(0 0 0 / 20%);
+  transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.5);
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.radio-group div {
+  margin-right: 15px;
+}
+
+#saveBtn {
+  background-color: #1e88e5;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 300;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}

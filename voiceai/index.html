@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tbh | Virtual Assistant.</title>
+    <script src="conf.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="nice-font" id="h">Virtual Assistant</h1>
+    </header>
+
+    <main class="nice-font"></main>
+
+    <div id="last"></div>
+
+    <div class="voice-btn" id="voiceBtn">
+      <i class="fas fa-microphone"></i>
+    </div>
+    <footer>
+      <div id="command">
+        <input placeholder="Type a Message" type="text" />
+        <button class="shadow nice-font">∆</button>
+      </div>
+    </footer>
+
+    <script src="
+https://cdn.jsdelivr.net/npm/dompurify@3.1.1/dist/purify.min.js
+"></script>
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked-highlight/lib/index.umd.js"></script>
+    <script>
+      const { Marked } = window.marked;
+      const { markedHighlight } = window.markedHighlight;
+      const marked = new Marked(
+        markedHighlight({
+          langPrefix: "hljs language-",
+          highlight(code, lang, info) {
+            const language = hljs.getLanguage(lang) ? lang : "plaintext";
+            return hljs.highlight(code, { language }).value;
+          },
+        }),
+      );
+    </script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
